@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED2B0DC31B55398700271FC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DC21B55398700271FC8 /* main.m */; };
+		ED2B0DC61B55398700271FC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DC51B55398700271FC8 /* AppDelegate.m */; };
+		ED2B0DC91B55398700271FC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DC81B55398700271FC8 /* ViewController.m */; };
+		ED2B0DCC1B55398700271FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2B0DCA1B55398700271FC8 /* Main.storyboard */; };
+		ED2B0DCE1B55398700271FC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2B0DCD1B55398700271FC8 /* Images.xcassets */; };
+		ED2B0DD11B55398700271FC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2B0DCF1B55398700271FC8 /* LaunchScreen.xib */; };
+		ED2B0DDD1B55398800271FC8 /* Dojo_LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DDC1B55398800271FC8 /* Dojo_LoginTests.m */; };
+		ED2B0DEC1B55437700271FC8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DEB1B55437700271FC8 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED2B0DD71B55398800271FC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED2B0DB51B55398700271FC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED2B0DBC1B55398700271FC8;
+			remoteInfo = "Dojo Login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED2B0DBD1B55398700271FC8 /* Dojo Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dojo Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2B0DC11B55398700271FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2B0DC21B55398700271FC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED2B0DC41B55398700271FC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED2B0DC51B55398700271FC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED2B0DC71B55398700271FC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED2B0DC81B55398700271FC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED2B0DCB1B55398700271FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED2B0DCD1B55398700271FC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ED2B0DD01B55398700271FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ED2B0DD61B55398800271FC8 /* Dojo LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dojo LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2B0DDB1B55398800271FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2B0DDC1B55398800271FC8 /* Dojo_LoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dojo_LoginTests.m; sourceTree = "<group>"; };
+		ED2B0DEA1B55437700271FC8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		ED2B0DEB1B55437700271FC8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED2B0DBA1B55398700271FC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2B0DD31B55398800271FC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED2B0DB41B55398700271FC8 = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DBF1B55398700271FC8 /* Dojo Login */,
+				ED2B0DD91B55398800271FC8 /* Dojo LoginTests */,
+				ED2B0DBE1B55398700271FC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED2B0DBE1B55398700271FC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DBD1B55398700271FC8 /* Dojo Login.app */,
+				ED2B0DD61B55398800271FC8 /* Dojo LoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2B0DBF1B55398700271FC8 /* Dojo Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DE61B553A8400271FC8 /* Model */,
+				ED2B0DE71B553A9300271FC8 /* View */,
+				ED2B0DE81B553A9A00271FC8 /* Controller */,
+				ED2B0DE91B553ACB00271FC8 /* Resources */,
+				ED2B0DC41B55398700271FC8 /* AppDelegate.h */,
+				ED2B0DC51B55398700271FC8 /* AppDelegate.m */,
+				ED2B0DC01B55398700271FC8 /* Supporting Files */,
+			);
+			path = "Dojo Login";
+			sourceTree = "<group>";
+		};
+		ED2B0DC01B55398700271FC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DC11B55398700271FC8 /* Info.plist */,
+				ED2B0DC21B55398700271FC8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED2B0DD91B55398800271FC8 /* Dojo LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DDC1B55398800271FC8 /* Dojo_LoginTests.m */,
+				ED2B0DDA1B55398800271FC8 /* Supporting Files */,
+			);
+			path = "Dojo LoginTests";
+			sourceTree = "<group>";
+		};
+		ED2B0DDA1B55398800271FC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DDB1B55398800271FC8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED2B0DE61B553A8400271FC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ED2B0DE71B553A9300271FC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DCF1B55398700271FC8 /* LaunchScreen.xib */,
+				ED2B0DCA1B55398700271FC8 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ED2B0DE81B553A9A00271FC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DEE1B5543AB00271FC8 /* Login */,
+				ED2B0DED1B55438D00271FC8 /* Detail */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ED2B0DE91B553ACB00271FC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DCD1B55398700271FC8 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ED2B0DED1B55438D00271FC8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DEA1B55437700271FC8 /* DetailViewController.h */,
+				ED2B0DEB1B55437700271FC8 /* DetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		ED2B0DEE1B5543AB00271FC8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DC71B55398700271FC8 /* ViewController.h */,
+				ED2B0DC81B55398700271FC8 /* ViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED2B0DBC1B55398700271FC8 /* Dojo Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2B0DE01B55398800271FC8 /* Build configuration list for PBXNativeTarget "Dojo Login" */;
+			buildPhases = (
+				ED2B0DB91B55398700271FC8 /* Sources */,
+				ED2B0DBA1B55398700271FC8 /* Frameworks */,
+				ED2B0DBB1B55398700271FC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dojo Login";
+			productName = "Dojo Login";
+			productReference = ED2B0DBD1B55398700271FC8 /* Dojo Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED2B0DD51B55398800271FC8 /* Dojo LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2B0DE31B55398800271FC8 /* Build configuration list for PBXNativeTarget "Dojo LoginTests" */;
+			buildPhases = (
+				ED2B0DD21B55398800271FC8 /* Sources */,
+				ED2B0DD31B55398800271FC8 /* Frameworks */,
+				ED2B0DD41B55398800271FC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED2B0DD81B55398800271FC8 /* PBXTargetDependency */,
+			);
+			name = "Dojo LoginTests";
+			productName = "Dojo LoginTests";
+			productReference = ED2B0DD61B55398800271FC8 /* Dojo LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED2B0DB51B55398700271FC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "CI&T";
+				TargetAttributes = {
+					ED2B0DBC1B55398700271FC8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					ED2B0DD51B55398800271FC8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = ED2B0DBC1B55398700271FC8;
+					};
+				};
+			};
+			buildConfigurationList = ED2B0DB81B55398700271FC8 /* Build configuration list for PBXProject "Dojo Login" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED2B0DB41B55398700271FC8;
+			productRefGroup = ED2B0DBE1B55398700271FC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED2B0DBC1B55398700271FC8 /* Dojo Login */,
+				ED2B0DD51B55398800271FC8 /* Dojo LoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED2B0DBB1B55398700271FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2B0DCC1B55398700271FC8 /* Main.storyboard in Resources */,
+				ED2B0DD11B55398700271FC8 /* LaunchScreen.xib in Resources */,
+				ED2B0DCE1B55398700271FC8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2B0DD41B55398800271FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED2B0DB91B55398700271FC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2B0DC91B55398700271FC8 /* ViewController.m in Sources */,
+				ED2B0DC61B55398700271FC8 /* AppDelegate.m in Sources */,
+				ED2B0DC31B55398700271FC8 /* main.m in Sources */,
+				ED2B0DEC1B55437700271FC8 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2B0DD21B55398800271FC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2B0DDD1B55398800271FC8 /* Dojo_LoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED2B0DD81B55398800271FC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED2B0DBC1B55398700271FC8 /* Dojo Login */;
+			targetProxy = ED2B0DD71B55398800271FC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED2B0DCA1B55398700271FC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2B0DCB1B55398700271FC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED2B0DCF1B55398700271FC8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2B0DD01B55398700271FC8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED2B0DDE1B55398800271FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED2B0DDF1B55398800271FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED2B0DE11B55398800271FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dojo Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED2B0DE21B55398800271FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dojo Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED2B0DE41B55398800271FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dojo LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojo Login.app/Dojo Login";
+			};
+			name = Debug;
+		};
+		ED2B0DE51B55398800271FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dojo LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dojo Login.app/Dojo Login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED2B0DB81B55398700271FC8 /* Build configuration list for PBXProject "Dojo Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2B0DDE1B55398800271FC8 /* Debug */,
+				ED2B0DDF1B55398800271FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2B0DE01B55398800271FC8 /* Build configuration list for PBXNativeTarget "Dojo Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2B0DE11B55398800271FC8 /* Debug */,
+				ED2B0DE21B55398800271FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED2B0DE31B55398800271FC8 /* Build configuration list for PBXNativeTarget "Dojo LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2B0DE41B55398800271FC8 /* Debug */,
+				ED2B0DE51B55398800271FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED2B0DB51B55398700271FC8 /* Project object */;
+}
