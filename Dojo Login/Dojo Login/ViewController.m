@@ -54,11 +54,7 @@
         }
         @catch (NSException *exception)
         {
-            if ([exception.name isEqualToString:@"NSInvalidArgumentException"])
-            {
-                NSLog(@"NSInvalidArgumentException");
-                [self performSegueWithIdentifier:@"second" sender:self];
-            }
+            NSLog(@"%@", exception);
         }
     }
     
@@ -67,16 +63,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"goToDetail"]) {
         
-        DetailViewController *detail = segue.destinationViewController;
-        detail.userNameSegue = self->userName;
+        UINavigationController *navigation = segue.destinationViewController;
+        DetailViewController *detailView = (DetailViewController*) navigation.topViewController;
+        detailView.userNameSegue = userName;
         
     }
 }
-
-
-
-
-
 
 
 

@@ -44,18 +44,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WE3-rQ-yUQ"/>
                     <connections>
                         <outlet property="passwordUserTextField" destination="frR-Kq-s9I" id="dDN-LG-PIE"/>
                         <outlet property="titleLoginLabel" destination="Hny-P8-EzK" id="wde-dT-lFp"/>
                         <outlet property="userNameTextField" destination="eyj-4p-UU3" id="5CQ-EN-h2x"/>
-                        <segue destination="3k3-Mt-C1s" kind="modal" identifier="goToDetail" id="iMV-jb-siZ"/>
+                        <segue destination="MPp-mD-9vd" kind="modal" identifier="goToDetail" id="zD0-eV-UAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="409"/>
+            <point key="canvasLocation" x="612" y="-351"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--CYRO-->
         <scene sceneID="gwp-4Y-NME">
             <objects>
                 <viewController id="3k3-Mt-C1s" customClass="DetailViewController" sceneMemberID="viewController">
@@ -70,27 +71,92 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hH7-Tf-bS6">
-                                <rect key="frame" x="137" y="411" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5st-Sd-hDD">
+                                <rect key="frame" x="118" y="427" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" title="Create order">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="logoutButtonAction:" destination="3k3-Mt-C1s" eventType="touchUpInside" id="51B-uw-8cu"/>
+                                    <segue destination="cuY-ab-7Lb" kind="push" id="w46-Os-CcT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vHx-FS-ifv"/>
+                    <navigationItem key="navigationItem" title="CYRO" id="vHx-FS-ifv">
+                        <barButtonItem key="backBarButtonItem" title="Cyro" id="Nbl-r7-48p"/>
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="1h1-At-gzp">
+                            <connections>
+                                <action selector="logoutButtonAction:" destination="3k3-Mt-C1s" id="bEl-tU-KVE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="userNameLabel" destination="Pfk-vm-K9r" id="8T8-9e-tB9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6o-rs-2vl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="409"/>
+            <point key="canvasLocation" x="579" y="401"/>
+        </scene>
+        <!--Product Detail Table View Controller-->
+        <scene sceneID="xAi-YP-5Go">
+            <objects>
+                <tableViewController id="cuY-ab-7Lb" customClass="ProductDetailTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HqL-V1-cCW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="MCX-n5-fgO" customClass="CustomProductTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MCX-n5-fgO" id="bYs-vl-iK9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i am a product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xcv-Va-her">
+                                            <rect key="frame" x="73" y="11" width="239" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ePz-Xj-aez">
+                                            <rect key="frame" x="8" y="0.0" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Xcv-Va-her" id="yE3-4v-Rgi"/>
+                                    <outlet property="productImageView" destination="ePz-Xj-aez" id="3m7-27-AAS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NXf-9r-0LW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8b-PZ-0QA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7kG-QO-s8G">
+            <objects>
+                <navigationController id="MPp-mD-9vd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cX9-RL-TDB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3k3-Mt-C1s" kind="relationship" relationship="rootViewController" id="Cup-ah-anv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcY-te-nj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="406"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
